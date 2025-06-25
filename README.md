@@ -1,4 +1,4 @@
-# "[ICML 2025] Provably Improving Generalization of Few-shot models with synthetic data"
+# [ICML 2025] Provably Improving Generalization of Few-shot models with synthetic data
 
 This is the implementation of full version of paper Provably Improving Generalization of Few-shot models with synthetic data. 
 
