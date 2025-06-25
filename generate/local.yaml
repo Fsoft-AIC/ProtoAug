@@ -1,0 +1,5 @@
+
+save_dir: 
+datadream_dir:
+model_dir: 
+    sd2.1: stabilityai/stable-diffusion-2-1-base

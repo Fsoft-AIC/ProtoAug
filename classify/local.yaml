@@ -1,0 +1,14 @@
+wandb_key: 
+metadata_dir: metadata/imagenet
+clip_download_dir: 
+synth_train_data_dir: 
+
+real_train_data_dir:
+    pets: #direct directory path to folder store data file/classname
+real_test_data_dir:
+    pets: 
+
+real_train_fewshot_data_dir: 
+    pets: 
+
+
