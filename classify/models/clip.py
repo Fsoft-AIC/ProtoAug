@@ -48,9 +48,9 @@ class CLIP(nn.Module):
         # TODO: change the number of templates
         self.templates = TEMPLATES_SMALL[:1]
         if clip_version == "ViT-B/16":
-            self.clip, _ = clip.load('/cm/shared/cuongnl8/SynSup/model_clip/ViT-B-16.pt', device="cpu")
+            self.clip, _ = clip.load('/model_clip/ViT-B-16.pt', device="cpu")
         else: 
-            self.clip, _ = clip.load('/cm/shared/cuongnl8/SynSup/model_clip/RN50.pt', device='cpu')
+            self.clip, _ = clip.load('/model_clip/RN50.pt', device='cpu')
 
         # visual model
         if is_lora_image:
