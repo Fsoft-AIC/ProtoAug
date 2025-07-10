@@ -744,9 +744,9 @@ def train_one_epoch(
                         robustness_loss = mse_upper.sum() * (1.0 / g) * (1.0 / num_syn_in_region)
                         total_robustness_loss += robustness_loss
 
-                    total_loss = args.ce_real * loss_real + args.ce_syn * loss_gen \
-                                + args.lam_dis * total_discrepancy_loss \
-                                + args.lam_rob * total_robustness_loss
+                total_loss = args.ce_real * loss_real + args.ce_syn * loss_gen \
+                            + args.lam_dis * total_discrepancy_loss \
+                            + args.lam_rob * total_robustness_loss
             else:
                 # Synthetic-only: all samples are synthetic, so only compute robustness loss.
                 region_syn_in_batch = [[] for _ in range(int(args.num_centroids))]
